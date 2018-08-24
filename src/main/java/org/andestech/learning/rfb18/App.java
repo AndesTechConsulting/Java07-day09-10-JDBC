@@ -33,6 +33,7 @@ public class App
         PreparedStatement pState = conn.prepareStatement(
                 "select * from t2 where id > ? order by data");
 
+        // Так делать не нужно!
         // "select * from t2 where id >" + id + " order by data");
 
         pState.setInt(1,70000);
